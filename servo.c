@@ -84,24 +84,24 @@ void servoAttach(uint8_t servoNo, uint8_t pos)
 			servoInitPwmTimer0(&TCD0, &PORTD, PIN1_bm);
 			break;
 		case 8:
-			servoData[8].timer0 = NULL;
-			servoData[8].timer1 = &TCD1;
+			servoData[8].timer0 = &TCD0;
+			servoData[8].timer1 = NULL;
 			servoData[8].port = &PORTD;
-			servoData[8].pin = PIN4_bm;
+			servoData[8].pin = PIN2_bm;
 			servoData[8].minPulse = SERVO_DEF_MIN_PULSE_US;
 			servoData[8].maxPulse = SERVO_DEF_MAX_PULSE_US;
 			servoData[8].pos = pos;
-			servoInitPwmTimer1(&TCD1, &PORTD, PIN4_bm);
+			servoInitPwmTimer0(&TCD0, &PORTD, PIN2_bm);
 			break;
 		case 9:
-			servoData[9].timer0 = NULL;
-			servoData[9].timer1 = &TCD1;
+			servoData[9].timer0 = &TCD0
+			servoData[9].timer1 = NULL;
 			servoData[9].port = &PORTD;
-			servoData[9].pin = PIN5_bm;
+			servoData[9].pin = PIN3_bm;
 			servoData[9].minPulse = SERVO_DEF_MIN_PULSE_US;
 			servoData[9].maxPulse = SERVO_DEF_MAX_PULSE_US;
 			servoData[9].pos = pos;
-			servoInitPwmTimer1(&TCD1, &PORTD, PIN5_bm);
+			servoInitPwmTimer0(&TCD0, &PORTD, PIN3_bm);
 			break;
 		case 10:
 			servoData[10].timer0 = &TCE0;

@@ -139,6 +139,12 @@
     <Compile Include="servo_base.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="stepper.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="stepper.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="system.c">
       <SubType>compile</SubType>
     </Compile>

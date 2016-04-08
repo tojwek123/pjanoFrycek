@@ -11,9 +11,11 @@
 #include <stdbool.h>
 #include "circBuff.h"
 
-#define UART            USARTD0
-#define UART_RX_VECT    USARTD0_RXC_vect
-#define UART_PORT       PORTD
+#define UART            USARTE1
+#define UART_RX_VECT    USARTE1_RXC_vect
+#define UART_PORT       PORTE
+#define UART_RX_PIN		PIN6_bm
+#define UART_TX_PIN		PIN7_bm
 
 #define UART_BUFFER_SIZE 50
 

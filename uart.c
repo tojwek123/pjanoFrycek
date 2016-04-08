@@ -142,9 +142,9 @@ bool uartInit(uint32_t baudRate, uint8_t stopBits, uint8_t parity)
     //PMIC.CTRL |= PMIC_LOLVLEN_bm;
 
 	//Set TX pin as datasheet mentions
-    UART_PORT.OUTSET |= PIN3_bm;
-    UART_PORT.DIRSET |= PIN3_bm;
-	UART_PORT.OUTCLR |= PIN2_bm;
+    UART_PORT.OUTSET |= UART_TX_PIN;
+    UART_PORT.DIRSET |= UART_TX_PIN;
+	UART_PORT.OUTCLR |= UART_RX_PIN;
 
     //Set 8 bit frame format
     UART.CTRLC |= USART_CHSIZE_8BIT_gc;

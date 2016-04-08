@@ -2,7 +2,7 @@
 //
 //TCC0 (0:3), TCC1(4:5) = 6
 //TCE0 (0:3), TCE1(4:5) = 6
-//TCD0 (0:1), TCD1(4:5) = 4
+//TCD0 (0:3)			= 4
 //..................... = 16
 
 #ifndef servo_h
@@ -22,8 +22,8 @@
 
 #define D0 6
 #define D1 7
-#define D4 8
-#define D5 9
+#define D2 8
+#define D3 9
 
 #define E0 10
 #define E1 11

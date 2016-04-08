@@ -1,0 +1,2 @@
+add stepper motor lib w/ limit switches
+eeprom

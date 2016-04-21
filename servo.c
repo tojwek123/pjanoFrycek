@@ -94,7 +94,7 @@ void servoAttach(uint8_t servoNo, uint8_t pos)
 			servoInitPwmTimer0(&TCD0, &PORTD, PIN2_bm);
 			break;
 		case 9:
-			servoData[9].timer0 = &TCD0
+			servoData[9].timer0 = &TCD0;
 			servoData[9].timer1 = NULL;
 			servoData[9].port = &PORTD;
 			servoData[9].pin = PIN3_bm;

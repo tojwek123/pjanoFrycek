@@ -1,2 +1,2 @@
-add stepper motor lib w/ limit switches
+limit switches
 eeprom

@@ -7,6 +7,7 @@
 #include "uart.h"
 #include "system.h"
 #include "commandExecution.h"
+#include "stepper.h"
 
 #define CMD_LENGTH 50
 
@@ -22,22 +23,24 @@ int main(void)
     if (!uartInit(19200, 1, 1))
 		badInitAlarm();
 	
+	stepperInit(800, 255, 0, 255);
+
 	//attach all servos:
+	/*
 	for (uint8_t i = 0; i < SERVO_AMNT; ++i)
-		servoAttach(i, 45);
+		servoAttach(i, 45);*/
 		
 	systemInterruptEnable(INT_LOW);
 	sei();
 	
-	uartWrite("Device ready!\r\n");
-	
 	char str[CMD_LENGTH];
 	
     while (1)
-    {
+    {		
 		if (uartLinesReceived() > 0)
 		{
 			uartGetLine(str, CMD_LENGTH);
+
 			switch (executeCmd(str))
 			{
 				case BAD_FORMAT:

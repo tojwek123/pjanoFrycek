@@ -11,7 +11,7 @@
 #include <stdlib.h>
 
 #include "servo_base.h"
-#include "system.h"
+#include "utils.h"
 
 #define C0 0
 #define C1 1

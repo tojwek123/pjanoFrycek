@@ -8,6 +8,7 @@
 #include "registerDefines.h"
 #include "servo.h"
 #include "uart.h"
+#include "stepper.h"
 
 //FORMAT
 #define FORMAT_NUM	0
@@ -30,6 +31,18 @@ uint8_t execServoGetPos(char *str);
 uint8_t execServoGetPosAll(char *str);
 uint8_t execServoGetInfo(char *str);
 uint8_t execServoGetInfoAll(char *str);
+
+uint8_t execStepperSetPos(char *str);
+uint8_t execStepperSetFreq(char *str);
+uint8_t execStepperSetHoldPwm(char *str);
+uint8_t execStepperSetMovePwm(char *str);
+uint8_t execStepperGetPos(char *str);
+uint8_t execStepperGetSteps(char *str);
+uint8_t execStepperInc(char *str);
+uint8_t execStepperDec(char *str);
+uint8_t execStepperReady(char *str);
+uint8_t execStepperGetInfo(char *str);
+
 uint8_t execShowLog(char *str);
 
 #endif

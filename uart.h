@@ -17,7 +17,7 @@
 #define UART_RX_PIN		PIN6_bm
 #define UART_TX_PIN		PIN7_bm
 
-#define UART_BUFFER_SIZE 50
+#define UART_BUFFER_SIZE 200
 
 #define uartWrite 	printf
 #define uartWrite_P printf_P
